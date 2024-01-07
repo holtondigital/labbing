@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     proxmox = {
-      source = "MaartendeKruijf/proxmox"
-      version = "0.0.1"
+      source = "bpg/terraform-provider-proxmox"
+      version = "0.43.0"
     }
   }
 }
