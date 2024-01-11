@@ -77,7 +77,7 @@ resource "proxmox_vm_qemu" "labbing-worker01" {
     # set disk size here. leave it small for testing because expanding the disk takes time.
     size = "160G"
     type = "scsi"
-    storage = "stg01_pve"
+    storage = "stg01-pve-vms"
     iothread = 1
   }
   
