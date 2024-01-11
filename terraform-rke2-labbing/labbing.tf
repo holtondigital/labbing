@@ -49,7 +49,7 @@ resource "proxmox_vm_qemu" "labbing-cp01" {
   # in this case, since we are only adding a single VM, the IP will
   # be 10.98.1.91 since count.index starts at 0. this is how you can create
   # multiple VMs and have an IP assigned to each (.91, .92, .93, etc.)
-  ipconfig0 = "ip=10.20.6.4$/24,gw=10.20.6.1"
+  ipconfig0 = "ip=10.20.6.4/24,gw=10.20.6.1"
   
   # sshkeys set using variables. the variable contains the text of the key.
   sshkeys = <<EOF
@@ -97,7 +97,7 @@ resource "proxmox_vm_qemu" "labbing-worker01" {
   # in this case, since we are only adding a single VM, the IP will
   # be 10.98.1.91 since count.index starts at 0. this is how you can create
   # multiple VMs and have an IP assigned to each (.91, .92, .93, etc.)
-  ipconfig0 = "ip=10.20.6.5$/24,gw=10.20.6.1"
+  ipconfig0 = "ip=10.20.6.5/24,gw=10.20.6.1"
   
   # sshkeys set using variables. the variable contains the text of the key.
   sshkeys = <<EOF
