@@ -27,7 +27,7 @@ resource "proxmox_vm_qemu" "labbing-cp01" {
   disk {
     slot = 0
     # set disk size here. leave it small for testing because expanding the disk takes time.
-    size = "160G"
+    size = "180G"
     type = "scsi"
     storage = "stg01-pve-vms"
     iothread = 1
@@ -75,7 +75,7 @@ resource "proxmox_vm_qemu" "labbing-worker01" {
   disk {
     slot = 0
     # set disk size here. leave it small for testing because expanding the disk takes time.
-    size = "160G"
+    size = "180G"
     type = "scsi"
     storage = "stg01-pve-vms"
     iothread = 1
