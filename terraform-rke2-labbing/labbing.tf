@@ -35,7 +35,7 @@ resource "proxmox_vm_qemu" "labbing-cp01" {
   
   # if you want two NICs, just copy this whole network section and duplicate it
   network {
-    model = "virtio"
+    model = "e1000"
     bridge = "vmbr1"
   }
   # not sure exactly what this is for. presumably something about MAC addresses and ignore network changes during the life of the VM
@@ -83,7 +83,7 @@ resource "proxmox_vm_qemu" "labbing-worker01" {
   
   # if you want two NICs, just copy this whole network section and duplicate it
   network {
-    model = "virtio"
+    model = "e1000"
     bridge = "vmbr1"
   }
   # not sure exactly what this is for. presumably something about MAC addresses and ignore network changes during the life of the VM
