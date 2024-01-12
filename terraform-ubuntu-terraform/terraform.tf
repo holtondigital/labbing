@@ -18,7 +18,7 @@ resource "proxmox_vm_qemu" "terraform" {
   # basic VM settings here. agent refers to guest agent
   agent = 1
   os_type = "cloud-init"
-  boot = "order=scsi0;ide2;net0
+  boot = "order=scsi0;ide2;net0"
   cores = 4
   sockets = 2
   cpu = "host"
