@@ -23,7 +23,7 @@ resource "proxmox_vm_qemu" "terraform" {
   sockets = 2
   cpu = "host"
   memory = 16384
-  scsihw = "virtio-disk"
+  scsihw = "virtio-scsi-single"
   bootdisk = "scsi0"
   disk {
     slot = 0
